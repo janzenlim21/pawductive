@@ -9,8 +9,16 @@ function DogContextProvider(props){
         setState( prev => prev === "happy" ? "sad" : "happy");
     }
 
+    function setStateHappy(){
+        setState("happy");
+    }
+
+    function setStateSad(){
+        setState("sad");
+    }
+
     return (
-        <DogContext.Provider value = {{state, changeState}}>
+        <DogContext.Provider value = {{state, changeState,setStateHappy,setStateSad}}>
             {props.children}
         </DogContext.Provider>
     );

@@ -5,14 +5,14 @@ import {observable} from 'mobx';
 
 
 function WebSiteChecker(){
-    const {changeState} = useContext(DogContext);
+    const {setStateSad, setStateHappy} = useContext(DogContext);
     //window.onfocus = changeState;
     useEffect(() => {
-        window.onblur = changeState;
+        window.onblur = setStateSad;
         window.onfocus = function(){
             setTimeout(function(){
 
-                changeState();
+                setStateHappy();
             }, 3000);
             
         }
