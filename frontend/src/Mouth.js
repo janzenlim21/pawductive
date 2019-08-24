@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { DogContext } from './DogContext';
 import './Mouth.css';
 
+
 function Mouth(props){
 
     // state can be happy or sad
