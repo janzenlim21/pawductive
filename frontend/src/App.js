@@ -5,7 +5,7 @@ import Dog from './Dog';
 function App() {
   return (
     <div className="App">
-      <Dog />
+      <Dog state="happy"/>
     </div>
   );
 }
