@@ -1,0 +1,37 @@
+.tail {
+    background: #60c8e7;
+    width: 14px;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    right: 10px;
+    bottom: 40px;
+    transform: rotate(30deg);
+    border-radius: 14px;
+    transform-origin: bottom;
+    transition: 300ms;
+    animation: shake 0.08s infinite alternate;
+}
+
+.tail-sad {
+    background: transparent;
+    width: 14px;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    right: 10px;
+    bottom: 40px;
+    transform: rotate(30deg);
+    border-radius: 14px;
+    transform-origin: bottom;
+    transition: 300ms;
+}
+
+@keyframes shake {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(40deg);
+    }
+}

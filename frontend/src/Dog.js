@@ -1,7 +1,9 @@
 import React from 'react';
 import './dog.css';
+import Mouth from './Mouth';
+import Tail from './Tail';
 
-function Dog(){
+function Dog(props){
     return (
         <div className="dog">
             <div className="ears"></div>
@@ -9,9 +11,7 @@ function Dog(){
             <div className="body">
                 <div className="eyes"></div>
                 <div className="beard">
-                    <div className="mouth">
-                        <div className="tongue"></div>
-                    </div>
+                    <Mouth />
                 </div>
                 <div className="belt">
                     <div className="locket"></div>
@@ -27,9 +27,8 @@ function Dog(){
                     <div className="right"></div>
                 </div>
             </div>
-            <div className="tail">
+            <Tail />
         </div>
-    </div>
     );
 }
 
