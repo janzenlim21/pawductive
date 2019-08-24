@@ -3,6 +3,7 @@ import './dog.css';
 import Mouth from './Mouth';
 import Tail from './Tail';
 
+
 function Dog(props){
     return (
         <div className="dog">
