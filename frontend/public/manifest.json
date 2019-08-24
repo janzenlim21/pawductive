@@ -1,15 +1,14 @@
-
 {
     "name": "My Extension",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
-        "default_popup": "index.html"
+        "default_popup": "pawductive.html"
     },
     "icons": {
       "16": "dog.png",
       "48": "dog.png",
       "128": "dog.png"
     },
-    "content_security_policy": "script-src 'self' 'sha256-m7hMVxNBUiD+LYNM+9HjbhTHBpNQonT5YshsfCTar6I='; object-src 'self'"
+    "content_security_policy": "script-src 'self' 'sha256-i4VdERk5tqiVot+V5MfufyWRwwsG9/YYASIccUG5g2M='; object-src 'self'"
 }
