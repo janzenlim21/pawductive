@@ -1,0 +1,30 @@
+.bone {
+    font-family: Geneva;
+    background: ghostwhite;
+    height: 40px;
+    bottom: 120px;
+    width: 80%;
+    max-width: 300px;
+    position: relative;
+}
+
+.bone::before, .bone::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    background: ghostwhite;
+    box-shadow: 0 40px 0 ghostwhite;
+}
+
+.bone::before {
+    left: -20px;
+}
+
+.bone::after {
+    right: -20px;
+}
+
+

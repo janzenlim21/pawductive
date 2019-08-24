@@ -1,0 +1,27 @@
+.bone2 {
+    background: grey;
+    height: 38px;
+    bottom: 79px;
+    width: 80%;
+    max-width: 300px;
+    position: relative;
+}
+
+.bone2::before, .bone2::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    background: grey;
+    box-shadow: 0 40px 0 grey;
+}
+
+.bone2::before {
+    left: -20px;
+}
+
+.bone2::after {
+    right: -20px;
+}
