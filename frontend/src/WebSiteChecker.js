@@ -8,11 +8,14 @@ function WebSiteChecker(){
     const {changeState} = useContext(DogContext);
     //window.onfocus = changeState;
     useEffect(() => {
-        window.addEventListener('blur',function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            changeState();
-        })
+        window.onblur = changeState;
+        window.onfocus = function(){
+            setTimeout(function(){
+
+                changeState();
+            }, 3000);
+            
+        }
         
     });
     return (
