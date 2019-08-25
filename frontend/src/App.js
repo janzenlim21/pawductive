@@ -12,6 +12,7 @@ import Bone2 from './Bone2';
 import Button from './Button';
 import WebSiteChecker from './WebSiteChecker';
 import HeartRatings from './HeartRating';
+
 function App() {
   return (
     <div className="App">
@@ -19,10 +20,10 @@ function App() {
         <HeartRatings />
         <NoiseTrigger></NoiseTrigger>
         <WebSiteChecker/>
-
         <Dog />
         <Bone2 />
         <Bone />
+        
       </DogContextProvider>
     </div>
   );
