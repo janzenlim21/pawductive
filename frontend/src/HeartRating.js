@@ -21,7 +21,7 @@ export default function HeartRatings() {
     <div className = 'heart'>
         <StyledRating
           name="customized-color"
-          value={2}
+          value={3}
           getLabelText={getLabelText}
           precision={0.5}
           icon={<FavoriteIcon fontSize="inherit" />}
