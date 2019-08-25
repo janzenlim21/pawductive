@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react';
-
 export const DogContext = createContext();
 
 function DogContextProvider(props){
@@ -11,10 +10,12 @@ function DogContextProvider(props){
 
     function setStateHappy(){
         setState("happy");
+        
     }
 
     function setStateSad(){
         setState("sad");
+        
     }
 
     return (
