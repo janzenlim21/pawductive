@@ -9,7 +9,7 @@ function Mouth(props){
     const {state, changeState} = useContext(DogContext);
 
     const class_name = state === "sad" ? "sad-mouth" : "mouth"; 
-
+    
     return (
         <div className={class_name}>
             <div className="tongue"></div>

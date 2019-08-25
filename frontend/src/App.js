@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import Dog from './Dog';
 import DogContextProvider from "./DogContext";
+
+import NoiseTrigger from "./NoiseTrigger";
+
 import Bone from './Bone';
 import Bone2 from './Bone2';
 
@@ -15,7 +18,10 @@ function App() {
       <DogContextProvider>
         <HeartRatings />
         <Button />
-        <WebSiteChecker />
+
+        <NoiseTrigger></NoiseTrigger>
+        <WebSiteChecker/>
+
         <Dog />
         <Bone2 />
         <Bone />
