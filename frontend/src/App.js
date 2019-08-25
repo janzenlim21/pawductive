@@ -17,8 +17,6 @@ function App() {
     <div className="App">
       <DogContextProvider>
         <HeartRatings />
-        <Button />
-
         <NoiseTrigger></NoiseTrigger>
         <WebSiteChecker/>
 

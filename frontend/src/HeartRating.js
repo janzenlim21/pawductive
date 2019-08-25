@@ -8,11 +8,8 @@ import './HeartRating.css';
 
 const StyledRating = withStyles({
   iconFilled: {
-    color: '#ff6d75',
-  },
-  iconHover: {
     color: '#ff3d47',
-  },
+  }
 })(Rating);
 
 function getLabelText(value) {
@@ -21,17 +18,15 @@ function getLabelText(value) {
 
 export default function HeartRatings() {
   return (
-    <div>
-      <Box component="fieldset" mb={3} borderColor="transparent" className = 'heart'>
-        <Typography component="legend"></Typography>
+    <div className = 'heart'>
         <StyledRating
           name="customized-color"
           value={2}
           getLabelText={getLabelText}
           precision={0.5}
-          icon={<FavoriteIcon fontSize='20px' />}
+          icon={<FavoriteIcon fontSize="inherit" />}
+          size='large'
         />
-      </Box>
     </div>
   );
 }
