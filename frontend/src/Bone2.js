@@ -9,7 +9,6 @@ function Bone2(){
 
     return (
         <div className = 'bone2' />
-        
     );
 }
 

@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/lab": "^4.0.0-alpha.24",
+    "material-ui": "^0.20.2",
     "mobx": "^5.13.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

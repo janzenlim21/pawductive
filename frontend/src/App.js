@@ -8,12 +8,14 @@ import Bone2 from './Bone2';
 // for testing purposes
 import Button from './Button';
 import WebSiteChecker from './WebSiteChecker';
+import HeartRatings from './HeartRating';
 function App() {
   return (
     <div className="App">
       <DogContextProvider>
+        <HeartRatings />
         <Button />
-        <WebSiteChecker/>
+        <WebSiteChecker />
         <Dog />
         <Bone2 />
         <Bone />
